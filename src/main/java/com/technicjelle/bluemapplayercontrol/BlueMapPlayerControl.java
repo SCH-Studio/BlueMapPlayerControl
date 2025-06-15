@@ -14,7 +14,7 @@ public final class BlueMapPlayerControl extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		getLogger().info("BlueMapPlayerControl enabled");
+		getLogger().info("BlueMapPlayerControl включен");
 
 		new Metrics(this, 18378);
 
@@ -23,18 +23,18 @@ public final class BlueMapPlayerControl extends JavaPlugin {
 
 		BlueMapAPI.onEnable(api -> updateChecker.logUpdateMessage(getLogger()));
 
-		PluginCommand bmpc = Bukkit.getPluginCommand("bmpc");
+		PluginCommand bmpc = Bukkit.getPluginCommand("visible");
 		executor = new BMPC();
 		if(bmpc != null) {
 			bmpc.setExecutor(executor);
 			bmpc.setTabCompleter(executor);
 		} else {
-			getLogger().warning("bmpc is null. This is not good");
+			getLogger().warning("visible is null. This is not good");
 		}
 	}
 
 	@Override
 	public void onDisable() {
-		getLogger().info("BlueMapPlayerControl disabled");
+		getLogger().info("BlueMapPlayerControl выключен");
 	}
 }

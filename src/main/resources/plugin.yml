@@ -10,38 +10,38 @@ description: Adds player hiding functionality to BlueMap
 website: https://github.com/TechnicJelle/BlueMapPlayerControl
 
 commands:
-  bmpc:
+  visible:
     usage: /<command> [hide | show] [player]
-    description: Toggles visibility on BlueMap
-    permission: bmpc
+    description: Изменяет видимость на BlueMap
+    permission: visible
 
 permissions:
-  bmpc:
+  visible:
     default: true
-  bmpc.*:
+  visible.*:
     default: op
     children:
-      bmpc.self:
+      visible.self:
         default: true
         children:
-          bmpc.self.toggle: true
-          bmpc.self.show: true
-          bmpc.self.hide: true
-      bmpc.others:
+          visible.self.toggle: true
+          visible.self.show: true
+          visible.self.hide: true
+      visible.others:
         default: op
         children:
-          bmpc.others.toggle: true
-          bmpc.others.show: true
-          bmpc.others.hide: true
-  bmpc.self.toggle:
+          visible.others.toggle: true
+          visible.others.show: true
+          visible.others.hide: true
+  visible.self.toggle:
     default: true
-  bmpc.self.show:
+  visible.self.show:
     default: true
-  bmpc.self.hide:
+  visible.self.hide:
     default: true
-  bmpc.others.toggle:
+  visible.others.toggle:
     default: op
-  bmpc.others.show:
+  visible.others.show:
     default: op
-  bmpc.others.hide:
+  visible.others.hide:
     default: op

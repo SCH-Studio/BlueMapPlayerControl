@@ -5,15 +5,17 @@
 
 Simple [Paper](https://papermc.io/) plugin that allows you to show/hide players on [BlueMap](https://github.com/BlueMap-Minecraft/BlueMap/)
 
+Russian localization by [@Ryzzi00](https://github.com/Ryzzi00)
+
 ## Commands
 | Command               | Usage                                | Permission                |
 |-----------------------|--------------------------------------|---------------------------|
-| `/bmpc`               | Toggles your own visibility          | `bmpc.self.toggle`        |
-| `/bmpc show`          | Makes yourself visible               | `bmpc.self.show`          |
-| `/bmpc hide`          | Makes yourself invisible             | `bmpc.self.hide`          |
-| `/bmpc [player]`      | Toggles the visibility of any player | `bmpc.others.toggle` (OP) |
-| `/bmpc show [player]` | Makes the specified player visible   | `bmpc.others.show` (OP)   |
-| `/bmpc hide [player]` | Makes the specified player invisible | `bmpc.others.hide` (OP)   |
+| `/visible`            | Toggles your own visibility          | `visible.self.toggle`        |
+| `/visible show`          | Makes yourself visible               | `visible.self.show`          |
+| `/visible hide`          | Makes yourself invisible             | `visible.self.hide`          |
+| `/visible [player]`      | Toggles the visibility of any player | `visible.others.toggle` (OP) |
+| `/visible show [player]` | Makes the specified player visible   | `visible.others.show` (OP)   |
+| `/visible hide [player]` | Makes the specified player invisible | `visible.others.hide` (OP)   |
 
 ℹ️️ Supports `@a`, `@p`, `@r` and `@s` as player arguments.
 
